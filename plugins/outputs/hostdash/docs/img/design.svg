@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 532" width="760" height="532" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13">
+  <title>Устройство: один процесс Telegraf с плагином outputs.hostdash</title>
+  <style>
+    .ink { fill: #1b2130 } .quiet { fill: #5b6375 }
+    .box { fill: none; stroke: #8a93a3; stroke-width: 1.25 }
+    .frame { fill: none; stroke: #8a93a3; stroke-width: 1 }
+    .accent { fill: #2f6fdf; fill-opacity: 0.10; stroke: #2f6fdf; stroke-width: 2 }
+    .line { fill: none; stroke: #8a93a3; stroke-width: 1.25 }
+    .head { fill: #8a93a3 }
+    @media (prefers-color-scheme: dark) {
+      .ink { fill: #e3e6eb } .quiet { fill: #a0a7b5 }
+      .box, .frame, .line { stroke: #6b7383 }
+      .accent { fill: #6b9cf5; fill-opacity: 0.14; stroke: #6b9cf5 }
+      .head { fill: #6b7383 }
+    }
+  </style>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="head"/></marker></defs>
+  <text x="24" y="32" font-weight="600" font-size="15" class="ink">Один процесс: Telegraf с output-плагином hostdash</text>
+  <rect x="24" y="52" width="712" height="384" rx="6" class="frame"/>
+  <text x="40" y="73" font-weight="600" class="ink">Telegraf, собранный только с плагинами своего конфига</text>
+  <rect x="40" y="84" width="124" height="56" rx="6" class="box"/>
+  <text x="102" y="108" text-anchor="middle" font-weight="600" class="ink">Система</text>
+  <text x="102" y="125" text-anchor="middle" font-size="12" class="quiet">cpu mem disk net</text>
+  <rect x="179" y="84" width="124" height="56" rx="6" class="box"/>
+  <text x="241" y="108" text-anchor="middle" font-weight="600" class="ink">nvidia_smi</text>
+  <text x="241" y="125" text-anchor="middle" font-size="12" class="quiet">GPU NVIDIA</text>
+  <rect x="318" y="84" width="124" height="56" rx="6" class="box"/>
+  <text x="380" y="108" text-anchor="middle" font-weight="600" font-size="12" class="ink">kernel, schedstat</text>
+  <text x="380" y="125" text-anchor="middle" font-size="12" class="quiet">PSI, очереди ядер</text>
+  <rect x="457" y="84" width="124" height="56" rx="6" class="box"/>
+  <text x="519" y="108" text-anchor="middle" font-weight="600" class="ink">procstat</text>
+  <text x="519" y="125" text-anchor="middle" font-size="12" class="quiet">процессы</text>
+  <rect x="596" y="84" width="124" height="56" rx="6" class="box"/>
+  <text x="658" y="108" text-anchor="middle" font-weight="600" class="ink">exec</text>
+  <text x="658" y="125" text-anchor="middle" font-size="12" class="quiet">свои скрипты</text>
+  <rect x="40" y="164" width="332" height="56" rx="6" class="box"/>
+  <text x="206" y="188" text-anchor="middle" font-weight="600" class="ink">processors</text>
+  <text x="206" y="205" text-anchor="middle" font-size="12" class="quiet">converter и другие</text>
+  <text x="404" y="188" font-size="12" class="quiet">Конфиг: /etc/telegraf/telegraf.conf</text>
+  <text x="404" y="204" font-size="12" class="quiet">и telegraf.d/ (инпуты и страница)</text>
+  <rect x="40" y="244" width="680" height="176" rx="6" class="accent"/>
+  <text x="704" y="265" text-anchor="end" font-weight="600" class="ink">outputs.hostdash</text>
+  <rect x="56" y="276" width="206" height="56" rx="6" class="box"/>
+  <text x="159" y="300" text-anchor="middle" font-weight="600" class="ink">Write()</text>
+  <text x="159" y="317" text-anchor="middle" font-size="12" class="quiet">[]telegraf.Metric</text>
+  <rect x="278" y="276" width="206" height="56" rx="6" class="box"/>
+  <text x="381" y="300" text-anchor="middle" font-weight="600" class="ink">Колонки серий</text>
+  <text x="381" y="317" text-anchor="middle" font-size="12" class="quiet">окно во времени, в памяти</text>
+  <rect x="500" y="276" width="206" height="56" rx="6" class="box"/>
+  <text x="603" y="300" text-anchor="middle" font-weight="600" class="ink">Раскладка</text>
+  <text x="603" y="317" text-anchor="middle" font-size="12" class="quiet">конфиг плагина</text>
+  <rect x="278" y="348" width="206" height="56" rx="6" class="box"/>
+  <text x="381" y="372" text-anchor="middle" font-weight="600" class="ink">API /api/*</text>
+  <text x="381" y="389" text-anchor="middle" font-size="12" class="quiet">скрипты, curl</text>
+  <rect x="500" y="348" width="206" height="56" rx="6" class="box"/>
+  <text x="603" y="372" text-anchor="middle" font-weight="600" class="ink">Страница</text>
+  <text x="603" y="389" text-anchor="middle" font-size="12" class="quiet">адрес listen, вшита в плагин</text>
+  <path d="M102 140V152M241 140V152M380 140V152M519 140V152M658 140V152M102 152H658" class="line"/>
+  <path d="M206 152V164" class="line" marker-end="url(#arrow)"/>
+  <path d="M148 220V276" class="line" marker-end="url(#arrow)"/>
+  <path d="M262 304H278" class="line" marker-end="url(#arrow)"/>
+  <path d="M484 304H500" class="line" marker-end="url(#arrow)"/>
+  <path d="M381 332V348" class="line" marker-end="url(#arrow)"/>
+  <path d="M603 332V348" class="line" marker-end="url(#arrow)"/>
+  <path d="M381 404V468" class="line" marker-end="url(#arrow)"/>
+  <path d="M603 404V468" class="line" marker-end="url(#arrow)"/>
+  <rect x="278" y="468" width="206" height="40" rx="6" class="box"/>
+  <text x="381" y="493" text-anchor="middle" class="ink">Скрипты</text>
+  <rect x="500" y="468" width="206" height="40" rx="6" class="box"/>
+  <text x="603" y="493" text-anchor="middle" class="ink">Браузер</text>
+</svg>
